@@ -10,7 +10,7 @@ class Solution {
         return (long) value + min + (n-index-2)*2L;
     }
     public int minDivisor(int value) {
-        for (int i = 2; i <= Math.sqrt(value); i++) {
+        for (int i = 2; i*i <= value; i++) {
             if (value % i == 0) return i;
         }
         return value;

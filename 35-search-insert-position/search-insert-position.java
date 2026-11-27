@@ -12,6 +12,6 @@ class Solution {
                 low = mid + 1;
             }
         }
-        return target > nums[mid] ? mid + 1 : mid;
+        return low;
     }
 }
